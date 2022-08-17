@@ -1,0 +1,127 @@
+/* filters */
+section.filter {
+  padding: 0% 16%;
+}
+.categorycontainer {
+  margin-bottom: 20px;
+  font-size: 16px;
+  padding-top: 16px;
+}
+.categorycontainer .filtertext {
+  margin-bottom: 13px;
+}
+.categorycontainer .filtertext i {
+  width: 25px;
+  height: 25px;
+  display: inline;
+  vertical-align: middle;
+  color: #0084ff;
+}
+.categorycontainer .filtertext p {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 8px;
+  display: inline;
+}
+.categorycontainer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.categorycontainer ul li {
+  display: inline-flex;
+}
+.categorycontainer ul li a {
+  font-size: 0.75em;
+  padding: 6px 14px;
+  width: auto;
+  color: #0084ff;
+  border-radius: 15px;
+  border: 1px solid #0084ff;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.15s ease-in;
+}
+.categorycontainer ul li a:hover {
+  color: #fff;
+  background: linear-gradient(269deg, #0048ff, #0096ff);
+}
+.categorycontainer ul li a.active {
+  color: #fff;
+  background: linear-gradient(269deg, #0048ff, #0096ff);
+}
+/* cards */
+section.card {
+  /* padding: 2% 16%; */ /* Padding mentioned as document is commented here, cuz margin bottom is already given to categorycontainer, it is taking too much space in between so I commented */
+  padding: 0% 16% 2%;
+}
+.item {
+  /* width: 31.33%; */
+  width: 33.33%;
+  max-width: 17.5em; /* this is optional css I am adding. If I remove this, only two box are displaying. I got reference from actual website of edyoda */
+  box-shadow: 0 5px 20px 0 rgb(0 0 0 / 10%);
+  border-radius: 5px;
+  margin: 0.5rem;
+  border: 1px solid rgba(0, 168, 255, 0.3);
+  display: inline-block;
+}
+.item .imagesection {
+  width: 100%;
+  height: 176px;
+}
+.item .imagesection img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.item:hover {
+  
+  color: #000;
+  transform: scale(1.04);
+}
+.item .textsection {
+  padding: 10px 20px;
+}
+.item .textsection .authorcontainer p.author {
+  color: #0096ff;
+  font-size: 0.9em;
+  /* font-style: Italic; */
+  font-weight: 500;
+}
+
+.item .textsection .authorcontainer p.author span {
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  color: #000;
+  font-family: "Roboto", sans-serif;
+}
+.item p.item_description {
+  margin: 10px 0px;
+  color: #000;
+  opacity: 0.5;
+  letter-spacing: 0.35px;
+}
+.item h2.title {
+  font-size: 1.25em;
+  text-align: left;
+  margin: 0px;
+  font-weight: 600;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+.item .authorcontainer {
+  padding-top: 4px;
+}
+.item p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.43;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 4px 0;
+}
